@@ -16,14 +16,11 @@ public class Main {
         arr[j] = temp;
     }
     public static void selectionSort(int[] arr){
-        //for
         for(int i = 0; i < arr.length; i++){
-            int min = i;
             for(int j = 0; j < arr.length-1; j++){
-                if(arr[j] > arr[min]){
-                    min = j;
+                if(arr[i] > arr[j){
+                    swap(arr, i, j)
                 }
-                swap(arr, i, min);
             }
         }
     }
